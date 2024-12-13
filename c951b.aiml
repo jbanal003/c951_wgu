@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>Hi there! Please type "begin" to start.</template>
+    </category>
+    
+	<category>
+	    <pattern>BEGIN</pattern>
+	    <template>
+	        Hi there again! Do you need help choosing a major?
+	        <button>
+	            <text>YES</text>
+	            <postback>yesbutton</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>nobutton</postback>
+            </button>
+	        </template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+	    <pattern>NOBUTTON</pattern>
+	    <template>No worries! Have a good day!</template>
+    </category>
+    
+    <category>
+        <pattern>YESBUTTON</pattern>
+        <template>Are you interested in computer security?
+        <button>
+            <text>YES</text>
+            <postback>cyber</postback>
+        </button>
+        <button>
+            <text>NO</text>
+            <postback>nobutton2</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOBUTTON2</pattern>
+        <template>Are you interested in data analysis?
+        <button>
+            <text>YES</text>
+            <postback>data</postback>
+        </button>
+        <button>
+            <text>NO</text>
+            <postback>nobutton3</postback>
+        </button>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>NOBUTTON3</pattern>
+        <template>Are you interested in computer networking?
+        <button>
+            <text>YES</text>
+            <postback>net</postback>
+        </button>
+        <button>
+            <text>NO</text>
+            <postback>nobutton4</postback>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOBUTTON4</pattern>
+        <template>Are you interested in programming and project management?
+        <button>
+            <text>YES</text>
+            <postback>soft</postback>
+        </button>
+        <button>
+            <text>NO</text>
+            <postback>cs</postback>
+        </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CS</pattern>
+        <template>
+            Okay! Computer Science might be a great fit. <br/> <br/>
+            A computer scientist is an individual who uses expert technical 
+            knowledge like utilizing data, developing new software and 
+            analyzing trends to create solutions for organizations.
+            <button>
+                <text>Learn more about Computer Science</text>
+                <url>https://www.indeed.com/career-advice/finding-a-job/what-is-a-computer-scientist</url>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CYBER</pattern>
+        <template>
+            Great! Cybersecurity might be a great fit. <br/> <br/>
+            Cybersecurity professionals assess security risks, design security 
+            strategies, and implement security technologies to protect 
+            organizations from cyber attacks.
+            <button>
+                <text>Learn more about Cybersecurity</text>
+                <url>https://www.coursera.org/articles/cybersecurity-job-description</url>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA</pattern>
+        <template>
+            Great! Data Analyst might be a great fit. <br/> <br/>
+            Data Analysts plan decision-making, improve efficiency, enhance 
+            customer experiences, and manage risks by interpreting complex 
+            data sets.
+            <button>
+                <text>Learn more about Data Analyst</text>
+                <url>https://www.simplilearn.com/data-analyst-job-description-article</url>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NET</pattern>
+        <template>
+            Great! Network Engineer might be a great fit. <br/> <br/>
+            A Network Engineer, or Network Systems Engineer, is responsible 
+            for creating IT networks for businesses.
+            <button>
+                <text>Learn more about Network Engineer</text>
+                <url>https://www.indeed.com/hire/job-description/network-engineer</url>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SOFT</pattern>
+        <template>
+            Great! Software Engineer might be a great fit. <br/> <br/>
+            A Software Engineer, or Software Development Engineer, is 
+            responsible for developing software programs or systems that 
+            align with user needs.
+            <button>
+                <text>Learn more about Software Engineer</text>
+                <url>https://www.indeed.com/hire/job-description/software-engineer</url>
+            </button>
+        </template>
+    </category>
+    
+</aiml>
